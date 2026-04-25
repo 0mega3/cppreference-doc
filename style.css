@@ -1,0 +1,44 @@
+:root {
+    --body-bg-dark:     #030812;
+    --text-light:       #e0e8f0;
+    --link-bg-dark:     #0d192b;
+    --link-text-light:  #e0e8f0;
+}
+
+/* main page */
+body {
+    background: var(--body-bg-dark);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;      /* vh = viewport height */
+    margin: 0;
+    padding: 1rem;          /* 1 root em = relative to root font (~16px) */
+}
+
+h1 {
+    color: var(--text-light);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin: 2rem 0;         /* top/bottom = 2rem, left/right = 0 */
+}
+
+ul a,
+.button {
+    color: var(--link-text-light);
+    background: var(--link-bg-dark);
+    text-decoration: none;  /* removes underline from link */
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+}
